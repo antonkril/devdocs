@@ -338,6 +338,11 @@ Preserve `@api` tag when deprecating `@api`-marked code.
  */
 ~~~
 
+Trigger an `E_USER_DEPRECATED` message in deprecated functions/classes to notify extensions/customizations that use them:
+```
+trigger_error('Class is deprecated', E_USER_DEPRECATED);
+```
+
 #### Deprecated tag in XML/HTML
 
 ~~~
